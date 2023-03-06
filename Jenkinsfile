@@ -13,7 +13,7 @@ pipeline {
 		}
 		stage ("checkout code from git") {
 			steps {
-			 	git:"https://github.com/ketank185/demo.git", branch:"main"
+			 	git url:"https://github.com/ketank185/demo.git", branch:"main"
 			}
 		}
 		stage ("maven package build") {
